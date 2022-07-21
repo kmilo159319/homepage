@@ -1,0 +1,73 @@
+.btnform{
+    width: 101px;
+    height: 40px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #00bfc3;
+    color: #fff;
+    font: 300 12px Montserrat;
+
+}
+
+.input{
+    height: 38px;
+    padding-left: 20px;
+    width: 100%;
+    color: #2d3b48;
+    font: 14px Montserrat;
+    background-color: #ededed;
+    border-radius: 4px;
+    border: 1px solid #dcdfdf;
+}
+
+
+.continerinput{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin-left: 12%;
+    color: #6f6f72fd;
+    align-items: flex-end;
+}
+
+.tittleoutput{
+    display: flex;
+    align-items: center;
+    width: 75%;
+    height: auto;
+    margin-left: 40%;
+    margin-right: 12%;
+    justify-content:flex-start;
+    color: #26333e;
+    font: 700 15px Lato;
+    text-transform: uppercase;
+}
+
+
+.tittleform{
+    width: auto;
+    height: 100px;
+    color: #a6a6a7;
+    font: 24px Montserrat;
+    display: flex;
+    align-items: center;
+}
+
+.tittleform span{
+     width: 100%;
+ }
+
+
+
+ #file{
+    background-color: #ededed;
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid #dcdfdf;
+    border-radius: 4px;
+
+}
+
+
+
+

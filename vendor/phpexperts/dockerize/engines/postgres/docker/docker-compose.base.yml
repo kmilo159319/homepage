@@ -1,0 +1,30 @@
+version: '2'
+
+services:
+  web:
+    image: phpexperts/web:nginx-php7.3
+    depends_on:
+      - db
+    links:
+      - db
+    volumes:
+      - ./web:/etc/nginx/custom
+      - ..:/var/www
+
+  db:
+    image: postgres:9.6
+    volumes:
+      - /var/lib/docker/postgresql:/var/lib/postgresql
+
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: projectdb
+
+  redis:
+    image: redis:3.2.11
+    entrypoint:
+      - redis-server
+      - --requirepass ${REDIS_PASSWORD}
+      - --loglevel notice
+

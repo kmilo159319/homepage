@@ -1,0 +1,50 @@
+version: '3.6'
+# Requires Docker v18.02 or higher.
+
+#####################################################################
+#   The DockerPHP Project                                           #
+#   https://github.com/phpexpertsinc/docker-php                     #
+#   License: MIT                                                    #
+#                                                                   #
+#   Copyright © 2018-2021 PHP Experts, Inc. <sales@phpexperts.pro>  #
+#       Author: Theodore R. Smith <theodore@phpexperts.pro>         #
+#      PGP Sig: 4BF826131C3487ACD28F2AD8EB24A91DD6125690            #
+#####################################################################
+
+services:
+  web:
+    image: phpexperts/web:nginx-php8.1-debug
+    volumes:
+      - .:/var/www:delegated
+      - ./docker/web:/etc/nginx/custom
+    ports:
+      - 8084:80
+
+
+###### CUSTOM EDITS START HERE ######
+  mariadb:
+    image: mariadb:10.4
+    volumes:
+      - /var/lib/docker/mariadb/${DB_DATABASE}:/var/lib/mysql
+
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: ${DB_DATABASE}
+# Uncomment if you want it to be exposed system-wide.
+#    ports:
+#      - 3306:3306
+
+  workbench:
+    image: lscr.io/linuxserver/mysql-workbench:latest
+    container_name: mysql-workbench
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/London
+    volumes:
+      - /path/to/config:/config
+    ports:
+      - 3000:3000
+    cap_add:
+      - IPC_LOCK
+    restart: unless-stopped

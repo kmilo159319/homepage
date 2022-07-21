@@ -1,0 +1,358 @@
+:root{
+  --color1:  #2E8BC0;
+  --color2: #242424f6;
+  --color3: #7E8E90;
+  --color4: #DFE2E7;
+  --color5: #EB6037;
+  --color6: #76B947;
+  --color7: rgb(58, 72, 94);
+  --color8: rgb(46, 57, 75);
+  --color9:  rgba(255, 255, 255, 0.603);
+  --color10: #268AD9;
+  --color11: #e2b2a4ee;
+  --color12: rgb(69, 85, 110);
+  --color13: rgba(46, 57, 75, 0.541);
+  --color14: rgba(94, 115, 150, 0.541);
+  --color15:  rgba(230, 230, 230, 0.274);
+}
+
+
+
+.navbar {
+  transition: .5s;
+}
+
+.navbar-app{
+    background: var(--color8) !important;
+    box-shadow: 0 .1rem .6rem rgba(0, 0, 0, 0.479);
+}
+
+
+.navbar-scroll {
+  background: rgba(0, 0, 0, 0.6) !important;
+  transition: .3s;
+}
+
+
+
+.navbar-brand {
+  font-size: 14px !important;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.navbar-toggler {
+  border: none!important;
+  outline: none!important;
+
+}
+
+.navbar-toggler i {
+  color: white;
+}
+
+.navbar-nav .nav-item .nav-link{
+  border: none!important;
+  outline: none!important;
+  color: white!important;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.image-nav {
+  overflow: hidden;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  height: 400px !important;
+  position: relative !important;
+  background: linear-gradient(to right, hsla(197, 38%, 28%, 0.404), hsla(194, 35%, 19%, 0.548), hsla(198, 43%, 11%, 0.548)), url('../img/diseno-web.jpg');
+  background-attachment: fixed;
+
+}
+
+#letter:hover{
+  color: var(--color5) !important;
+}
+#letteron:hover{
+ background-color: var(--color5) !important;
+ border-radius: 4px;
+}
+
+@media (min-width: 992px) {
+
+  .navbar {
+    background: transparent;
+    transition: .5s;
+  }
+  .brand .navbar-brand {
+    font-size: 7px !important;
+    border: none!important;
+    outline: none!important;
+    font-family: 'Roboto', sans-serif;
+    color: #fff!important;
+  }
+
+  .navbar-nav .nav-item .nav-link{
+    color: white!important;
+  }
+  .nav-link {
+    margin-left: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 11px;
+
+  }
+  .nav-link::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0;
+    transition: width .3s;
+  }
+
+  .nav-link:hover::after {
+    width: 45%;
+    transition: width .3s;
+  }
+
+}
+
+@media (min-width: 150px) {
+
+    .navbar {
+      background: transparent;
+      transition: .5s;
+    }
+    .brand .navbar-brand {
+      font-size: 2px !important;
+      border: none!important;
+      outline: none!important;
+      font-family: 'Roboto', sans-serif;
+      color: #fff!important;
+    }
+
+    .navbar-nav .nav-item .nav-link{
+      color: white!important;
+    }
+    .nav-link {
+      margin-left: 30px;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 11px;
+
+    }
+    .nav-link::after {
+      content: '';
+      display: block;
+      height: 1px;
+      width: 0;
+      transition: width .3s;
+    }
+
+    .nav-link:hover::after {
+      width: 45%;
+      transition: width .3s;
+    }
+
+
+  }
+
+html{
+overflow-x:hidden ;
+background-color: var(--color8);
+}
+
+.body-app{
+    background-color: var(--color8);
+}
+
+#contenido{
+
+background-color: var(--color8);
+}
+
+
+.border-navar{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+.fisrtbrand{
+  text-decoration: none;
+  color: var(--color1);
+}
+
+
+.main{
+  text-decoration: none;
+  list-style: none;
+
+}
+
+.main ul h2{
+  color: #3a6daa;
+}
+
+.main ul li{
+  list-style: none;
+  margin-bottom: 20%;
+}
+
+.main ul li h6{
+  color: #8eb5e2;
+}
+
+
+
+.avatar-size{
+    margin-right: 20px;
+    height: 25px;
+    border-radius: 20px;
+}
+
+#panel{
+margin-bottom: 0%;
+}
+
+
+#panel-tittle{
+    font: 30px Montserrat;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--color12);
+}
+
+
+#panel .row{
+    margin-bottom: 30px;
+    height: 290px;
+    width: 60%;
+    margin-left: 200px;
+}
+
+
+.option{
+    position: relative;
+    box-shadow: 0 30px 40px -15px rgba(0, 0, 0, 0.123);
+    border-radius: 4px;
+    background-color: #fff;
+
+}
+
+
+.areaoption{
+    text-transform: capitalize;
+
+}
+
+
+.areaoption .head{
+    margin-top: 15%;
+    height: 90px;
+     text-align: center;
+}
+
+
+.areaoption .body{
+    height: 125px;
+     text-align: center;
+     border-radius: 4px;
+}
+
+
+
+.areaoption .body button{
+    width: 101px;
+    height: 40px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #00bfc3;
+    color: #fff;
+    font: 300 14px Montserrat;.fila{
+        border: 3px solid blue;
+        background-color: lightblue;
+        margin-bottom: 50px;
+        height: 180px;
+      }
+      .columna{
+        background-color: lightgreen;
+        border: 1px solid green;
+        padding: 10px;
+      }
+
+
+.uploadcurriculum{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 100px;
+    width: 90%;
+    height: 600px;
+    align-items: center;
+    text-align: center;
+}
+
+
+.uploadlist{
+    position: relative;
+    margin-top: 100px;
+    width: 100%;
+    height: 600px;
+    align-items: center;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+card
+    height: 8em !important;
+    width: 5em !important;
+    float: left;
+    margin-left: 6% !important;
+    margin-bottom: 15% !important;
+    border-radius: 6px;
+}
+
+.pdfcurriculum img{
+    height: 3.5em;
+    margin: .5rem;
+
+}
+
+.pdfcurriculum h2{
+     margin: 2%;
+
+}
+
+
+.pdfcurriculum  h2{
+    font-size: 9px;
+}
+
+
+.delete{
+    position: absolute;
+    display: flex;
+    border: none;
+    width: 20px;
+    height: 40px;
+    background: none;
+    background-image: url(/public/img/delete.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    margin: 30px;
+    top: 52%;
+}
+
+
+
+.items-var-myarea{
+    background-color: var(--color8);
+    color:var(--color4);
+    height: auto;
+    text-transform:capitralize;
+    text-align:center;
+}

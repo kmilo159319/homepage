@@ -1,0 +1,52 @@
+
+
+
+
+.login-button {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 35%;
+    position: relative;
+    font-size: 13px;
+    font-weight: 500;
+    color: #696b79;
+    height: 100%;
+    border: 1px solid #bfc0c6;
+    background-color: #fff;
+    border-radius: 3px;
+    text-align: left
+}
+
+.login-button:hover {
+    box-shadow: 0 2px 5px #eaeaec
+}
+
+
+
+@media (min-width: 360px) {
+    .login-button {
+        width:100%;
+        display: inline-block
+    }
+}
+
+@media (min-width: 400px) {
+    .login-box {
+        display:inline-block;
+    }
+}
+
+.register-gplus-logo {
+    background-position: -290px 0;
+    width: 23px;
+    top: 13px
+}
+
+.register-fb-logo,.register-gplus-logo {
+    height: 29px;
+    position: absolute;
+    left: 15px
+}
+
+
