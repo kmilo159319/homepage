@@ -1,0 +1,19 @@
+.link-button{
+    border: none;
+    outline: none;
+    color: var(--color3);
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    transition: .5s;
+    width: auto;
+    height: auto;
+    background: none;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+.link-button:hover{
+    background: var(--color5);
+    color: white;
+    text-decoration: none;
+}

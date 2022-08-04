@@ -40,10 +40,13 @@ Route::group(['middleware' => config('fortify.middleware', ['web'])], function (
             $limiter ? 'throttle:'.$limiter : null,
         ]));
 
+    Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])
+        ->name('logout');
+
     Route::get('/logout', [AuthenticatedSessionController::class, 'destroy'])
         ->name('logout');
 
-    // Password Reset...
+    // Password Reset... 
     if (Features::enabled(Features::resetPasswords())) {
         if ($enableViews) {
             Route::get('/forgot-password', [PasswordResetLinkController::class, 'create'])

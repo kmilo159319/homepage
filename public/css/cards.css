@@ -307,3 +307,50 @@
 #next2:after {
     content: '↓';
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.lW_perfil  .imgPerfil{
+  width: 50% !important;
+  display: flex !important;
+  flex-direction: column !important;
+
+}
+
+#userphoto{
+  width: 100%;
+  border-radius: 500px !important;
+  cursor: pointer !important;
+  position: relative !important;
+}
+
+.btnImageCam{
+    position: relative;
+  background-color: #fff !important;
+  width: 45px !important;
+  height: 45px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 500px !important;
+  transform: translateY(-55px);
+  align-self: flex-end;
+  cursor: pointer;
+  top: 110%;
+  left: 70%;
+}

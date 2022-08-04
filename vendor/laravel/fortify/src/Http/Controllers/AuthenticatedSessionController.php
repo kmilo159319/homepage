@@ -47,7 +47,7 @@ class AuthenticatedSessionController extends Controller
     {
         return app(LoginViewResponse::class);
     }
-    
+
     /**
      * Attempt to authenticate a new session.
      *
