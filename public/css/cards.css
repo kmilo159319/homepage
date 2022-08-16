@@ -309,22 +309,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .lW_perfil  .imgPerfil{
   width: 50% !important;
   display: flex !important;
@@ -340,7 +324,7 @@
 }
 
 .btnImageCam{
-    position: relative;
+  position: relative;
   background-color: #fff !important;
   width: 45px !important;
   height: 45px !important;
@@ -353,4 +337,52 @@
   cursor: pointer;
   top: 110%;
   left: 70%;
+}
+
+
+
+/* form update personal information--------------------------------------------------------------------------------------------------------------*/
+
+
+.edit_data{
+    position: relative;
+    width: 70%;
+    height: auto;
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.425);  
+}
+
+.display{
+    position: relative;
+    display:flex;
+}
+
+.veen-2{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+.veen-2 label{
+    position: absolute;
+    top: -14px;
+    font-size: 18px;
+    white-space: nowrap;
+    background: #fff;
+    text-align: left;
+    left: 3rem;
+    padding: 0 4px;
+    color: #999;
+    pointer-events: none;
+}
+
+.veen-2 input{
+    height: 40px;
+    padding: 5px 15px;
+    width: 100%;
+    border: solid 1px #999;
+}
+
+.subveen{
+    margin: 44px;
 }

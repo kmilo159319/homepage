@@ -114,12 +114,6 @@ visibility: hidden;
     width: 100%;
     border: solid 1px #999;
 }
-.veen .wrapper input{
-    height: 40px;
-    padding: 5px 15px;
-    width: 100%;
-    border: solid 1px #999;
-}
 .veen .wrapper input:focus{
     outline: none;
     border-color: #ff4931;
@@ -193,9 +187,7 @@ box-shadow: inset 0 0 0 50px #fff
 font-size: 13px;
 }
 
-.checkbox label{
 
-}
 
 #rememberme{
     position: relative;
@@ -203,16 +195,6 @@ font-size: 13px;
     top: -16px;
     left: 25px;
 
-}
-
-
-.veen-2{
-    margin: 0px auto;
-    background-color: white;
-    height: 100%;
-    width: 100%;
-    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
-    opacity: 96%;
 }
 
 
@@ -224,6 +206,8 @@ font-size: 13px;
     height: 410px;
     left: 180px;
 }
+
+
 
 
 .continer_buttom{

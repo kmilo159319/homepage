@@ -24,16 +24,19 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item ml-3">
-          <a class="nav-link" href="{{$ref1}}" id="letter">{{$item1}}</a>
+          <a class="nav-link" href="{{$ref2}}" id="letter"><i class="fa-solid fa-layer-group"></i>&nbsp;{{$item2}}</a>
         </li>
         <li class="nav-item ml-3">
-          <a class="nav-link" href="{{$ref2}}" id="letter">{{$item2}}</a>
+          <a class="nav-link" href="{{$ref3}}" id="letter"><i class="fa-solid fa-house-chimney-crack"></i>&nbsp;{{$item3}}</a>
         </li>
         <li class="nav-item ml-3">
-          <a class="nav-link" href="{{$ref3}}" id="letter">{{$item3}}</a>
+          <a class="nav-link" href="{{$ref4}}" id="letteron"><i class="fa-solid fa-arrow-right-from-bracket"></i>&nbsp;{{$item4}}</a>
         </li>
         <li class="nav-item ml-3">
-          <a class="nav-link" href="{{$ref4}}" id="letteron">{{$item4}}</a>
+          <a class="nav-link mt-1" href="{{$ref1}}" id="letter"><i class="fa-solid fa-bell"></i></a>
+        </li>
+        <li class="nav-item ml-3">
+          <a class="nav-link mt-1" href="{{$ref1}}" id="letter"><i class="fa-solid fa-comments"></i></a>
         </li>
       </ul>
     </div>

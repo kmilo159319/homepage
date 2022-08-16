@@ -1,17 +1,31 @@
-@extends('layouts.basic_page_without_footer')
-@section('title',"editprofile")
+@include('layouts.basic_page_without_footer',['title'=> 'my area'])
 @section('content')
 @include('layouts.header',[
-    'item1'=> 'edit profile',
     'item2'=> 'my area',
-    'item3'=> 'principal page',
+    'item3'=> 'home',
     'item4'=> 'logout',
-    'bg' =>'bg-dark',
+    'bg' =>'navbar-app',
     'ref1'=>route('user.edit',auth()->user()),
     'ref2'=>route('user.show',auth()->user()->id),
-    'ref3'=>route('home'),
-    'ref4'=> route('homepage') ])
-    <section id="contenido">
-    @include('layouts.editprofile')
-    </section>
-@endsection
+    'ref3'=>route('/dashboard'),
+    'ref4'=> route('logout') ])
+
+@include('layouts.editprofile');
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+

@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,400);
+@keyframes load {
+  0% {
+    stroke-dashoffset: 0;
+  }
+}
+.progress {
+  background:none;
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  text-align: center;
+  height: auto;
+}
+.progress > li {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: #93A2AC;
+  font-family: Lato;
+  font-weight: 100;
+  margin: 1rem;
+}
+.progress > li:before {
+  position: absolute;
+  font-size: 22px;
+  width: 100%;
+  bottom: -1rem;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+}
+.progress > li:after {
+  content: attr(data-percent);
+  position: absolute;
+  width: 100%;
+  top: 4.7rem;
+  left: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+.progress svg {
+  width: 10rem;
+  height: 10rem;
+}
+.progress svg:nth-child(2) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: rotate(-90deg);
+}
+.progress svg:nth-child(2) path {
+  fill: none;
+  stroke-width:15;
+  stroke-dasharray: 629;
+  stroke: var(--color8) ;
+  opacity: 1;
+  animation: load 10s;
+}
+
+
+
+
+
+

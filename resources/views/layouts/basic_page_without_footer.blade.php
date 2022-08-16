@@ -18,9 +18,10 @@
     <link rel="stylesheet" href="{{asset('css/style-login-and-register.css')}}" />
     <link rel="stylesheet" href="{{asset('css/button_model.css')}}" />
     <link rel="stylesheet" href="{{asset('css/buttons.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/progress_bar.css')}}" />
     <link rel="stylesheet" href="{{asset('css/forms.css')}}" />
     <script src="https://kit.fontawesome.com/ddd467e91f.js" crossorigin="anonymous"></script>
-    <title>@yield('title')</title>
+    <title>{{$title}}</title>
 </head>
 <body class="body-app">
 

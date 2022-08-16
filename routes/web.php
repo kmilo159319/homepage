@@ -20,6 +20,11 @@ Route::get('/', function () {
     return view('frontend.index');
 });
 
+
+Route::get('/pruebas', function () {
+    return view('dashboard');
+});
+
 Route::get('/dashboard', function () {
     return view('frontend.panel');
 })->middleware(['auth'])->name('/dashboard');

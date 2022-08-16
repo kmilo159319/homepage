@@ -5,7 +5,7 @@
   --color4: #DFE2E7;
   --color5: #EB6037;
   --color6: #76B947;
-  --color7: rgb(58, 72, 94);
+  --color7: rgb(58, 72, 94);	
   --color8: rgb(46, 57, 75);
   --color9:  rgba(255, 255, 255, 0.603);
   --color10: #268AD9;
@@ -29,7 +29,7 @@
 
 
 .navbar-scroll {
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(31, 40, 54, 0.932) !important;
   transition: .3s;
 }
 
@@ -168,11 +168,14 @@
 
 
   }
-
+  
+  
 html{
-overflow-x:hidden ;
-background-color: var(--color8);
+background-color: white;
 }
+
+body { min-height: 100vh; }
+
 
 .body-app{
     background-color: var(--color8);
@@ -350,31 +353,6 @@ margin-bottom: 0%;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @import url('https://fonts.googleapis.com/css?family=Cabin:500,700|Quicksand:400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500,900');
 
@@ -383,10 +361,15 @@ margin-bottom: 0%;
 	position:relative !important;
 	width:100%;
 	height:8rem;
-	border-bottom: 4px solid #fff !important;
+	border-bottom: 8px solid var(--color14) !important;
 	background-position:center !important;
-	background-color: #ffffff;
-	background-image: url("https://i.ytimg.com/vi/TN2fJ24pKXs/maxresdefault.jpg");
+	background-size:cover;
+}
+
+.imgr{
+	position:relative !important;
+	background-position:center !important;
+	background-color: none;
 	background-size:cover;
 }
 
@@ -443,12 +426,12 @@ margin-bottom: 0%;
 .avatar{
 	z-index:1;
 	position: relative;
-  margin: auto;
+    margin: auto;
 	margin-top: -80px;
 	width: 130px;
 	height: 130px;
 	border-radius: 100%;
-	border: 4px solid #fff;
+	border: 6px solid var(--color14);
 	background: url("http://meredithcnn.images.worldnow.com/images/10389401_G.jpg");
 	background-size: cover;
 	background-position: center;
@@ -677,3 +660,16 @@ margin-bottom: 0%;
 	}
 	
 }
+
+
+.image-nav-blue {
+  overflow: hidden;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  height: 460px !important;
+  position: relative !important;
+  background-attachment: fixed;
+  
+  }
+
+

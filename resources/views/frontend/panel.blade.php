@@ -1,5 +1,4 @@
-@extends('layouts.basic_page_without_footer')
-@section('title',"my area")
+@include('layouts.basic_page_without_footer',['title'=> 'my area'])
 @section('content')
 @include('layouts.header',[
     'item1'=> 'edit profile',
@@ -26,7 +25,7 @@
 
 
 <div id="perfil">
- <div class="header">
+ <div class="header" style="background: linear-gradient(to right, hsla(197, 38%, 28%, 0.404), hsla(194, 35%, 19%, 0.548), hsla(198, 43%, 11%, 0.548)), url('https://i.ytimg.com/vi/TN2fJ24pKXs/maxresdefault.jpg');">
    <button class="mui-btn">
      <div class="text">CHANGE PHOTO</div>
      <i class="fa fa-picture-o" aria-hidden="true"></i>
@@ -175,8 +174,11 @@
             </div>
         </div>
       </div>
-     </div>        
+     </div>  
    </div>
+
+
+   
 
    <div class="col-sm-12 col-md-2 col-xl-2">
        <div class="row">
