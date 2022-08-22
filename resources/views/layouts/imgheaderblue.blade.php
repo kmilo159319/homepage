@@ -2,8 +2,13 @@
     <br><br><br>    
   <div class=" text-white">
     <div class="row">
-        <div class="col-4 mt-5">
-            <div class="avatar">
+        <div class="col-3 mt-1">
+            <div class="avatar" 
+               @if (auth()->user()->profilephoto)
+               style="background: url('{{asset('profilephoto')}}'); width: 12rem; height:12rem; top:5rem;"
+               @else    
+               style="background: url('{{asset('img/icon-home2.png')}}'); width: 12rem; height:12rem; top:5rem;"
+               @endif>
                 <div class="btnImageCam">
                   <svg style="width:38px;height:28px;" viewBox="0 0 24 24">
                     <path fill="#027c70" d="M4,4H7L9,2H15L17,4H20A2,2 0 0,1 22,6V18A2,2 0 0,1 20,20H4A2,2 0 0,1 2,18V6A2,2 0 0,1 4,4M12,7A5,5 0 0,0 7,12A5,5 0 0,0 12,17A5,5 0 0,0 17,12A5,5 0 0,0 12,7M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9Z" />
@@ -11,7 +16,7 @@
               </div>
               </div>
         </div>
-        <div class="col-6 ml-4 mt-5">
+        <div class="col-6 ml-1 mt-5">
             <h1 style="font-size: 3rem" >{{$title}}</h1>
         </div>
         </div>
@@ -23,3 +28,4 @@
       </svg>
     </div>
 </div>
+  

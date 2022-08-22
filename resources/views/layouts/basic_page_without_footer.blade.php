@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="{{asset('css/progress_bar.css')}}" />
     <link rel="stylesheet" href="{{asset('css/forms.css')}}" />
     <script src="https://kit.fontawesome.com/ddd467e91f.js" crossorigin="anonymous"></script>
-    <title>{{$title}}</title>
+    <title>@yield('tittle')</title>
 </head>
 <body class="body-app">
 

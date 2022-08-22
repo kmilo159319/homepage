@@ -353,7 +353,8 @@
 
 .display{
     position: relative;
-    display:flex;
+    background-color: #fff;
+    display: flex;
 }
 
 .veen-2{
@@ -365,12 +366,12 @@
 
 .veen-2 label{
     position: absolute;
-    top: -14px;
-    font-size: 18px;
+    top: -13px;
+    font-size: 16px;
     white-space: nowrap;
     background: #fff;
     text-align: left;
-    left: 3rem;
+    left: 7%;
     padding: 0 4px;
     color: #999;
     pointer-events: none;
@@ -385,4 +386,28 @@
 
 .subveen{
     margin: 44px;
+}
+
+.icon-add{
+font-size: 3rem;
+color: var(--color1);
+}
+
+.veen-2 input:focus{
+    outline: none;
+    border-color: #ff4931;
+}
+
+@media (max-width: 1300px) {
+    .edit_data{
+        position: relative;
+        width: 75%;
+        height: auto;
+        box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.425);  
+    }
+    .veen-2 label{
+
+        font-size: 85%;
+        top: -12px;
+    }
 }

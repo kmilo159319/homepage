@@ -1,4 +1,5 @@
-@include('layouts.basic_page_without_footer',['title'=> 'my area'])
+@extends('layouts.basic_page_without_footer')
+@section('tittle', 'edit profile')
 @section('content')
 @include('layouts.header',[
     'item2'=> 'my area',
@@ -11,10 +12,7 @@
     'ref4'=> route('logout') ])
 
 @include('layouts.editprofile');
-
-</div>
-
-
+@endsection
 
 
 
